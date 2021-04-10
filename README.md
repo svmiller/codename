@@ -10,13 +10,24 @@
 library(codename)
 
 codename()
-#> [1] "plaintive pony"
+#> [1] "incredible snake"
 codename()
-#> [1] "limping cephalopod"
+#> [1] "radiant beaver"
 codename()
-#> [1] "peppery sheep"
+#> [1] "unlucky constrictor"
 codename(seed = 8675309)
 #> [1] "crushing eagle"
 codename(seed = 8675309)
 #> [1] "crushing eagle"
+
+codename(type = "ubuntu")
+#> [1] "sardonic shrew"
+codename(type = "ubuntu")
+#> [1] "unsightly urial"
+codename(type = "ubuntu")
+#> [1] "likely loon"
+codename(type = "ubuntu", seed = 123456)
+#> [1] "stimulating seahorse"
+codename(type = "ubuntu", seed = 123456)
+#> [1] "stimulating seahorse"
 ```

@@ -36,4 +36,10 @@ codename()
 codename()
 codename(seed = 8675309)
 codename(seed = 8675309)
+
+codename(type = "ubuntu")
+codename(type = "ubuntu")
+codename(type = "ubuntu")
+codename(type = "ubuntu", seed = 123456)
+codename(type = "ubuntu", seed = 123456)
 ```
