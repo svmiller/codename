@@ -1,0 +1,39 @@
+---
+output: github_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "80%",
+  fig.align = "center"
+)
+```
+
+# Codename Generation for Organizations, People, Projects, and Whatever Else
+
+```{r echo=FALSE, results="hide", message=FALSE}
+library("badger")
+```
+
+```{r, echo = FALSE, results='asis'}
+cat(
+	badge_cran_release("codename", "green"),
+	badge_cran_download("codename", "grand-total", "green"),
+	badge_cran_download("codename", "last-month", "green"),
+	badge_cran_download("codename", "last-week", "green")
+)
+```
+
+
+```{r}
+library(codename)
+
+codename()
+codename()
+codename()
+codename(seed = 8675309)
+codename(seed = 8675309)
+```
