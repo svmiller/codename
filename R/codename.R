@@ -3,7 +3,12 @@ codename <- function(type = "any", seed) {
   if (missing(seed)) {
 
   } else {
-    set.seed(seed)
+    if (is.numeric(seed))
+    {
+      set.seed(seed)
+    }
+    charseed <- char2seed(seed)
+    set.seed(charseed)
   }
 
   if (type == "any") {

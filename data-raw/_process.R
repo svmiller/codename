@@ -22,3 +22,12 @@ animals %>%
 
 
 save(animals, file="data/animals.rda")
+
+# colors ----
+# https://xkcd.com/color/rgb.txt
+
+colors <- read_tsv("data-raw/colors.tsv") %>%
+  arrange(value)
+
+
+save(colors, file="data/colors.rda")

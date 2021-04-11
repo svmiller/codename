@@ -10,24 +10,28 @@
 library(codename)
 
 codename()
-#> [1] "incredible snake"
+#> [1] "metallic monkey"
 codename()
-#> [1] "radiant beaver"
+#> [1] "horrible swordfish"
 codename()
-#> [1] "unlucky constrictor"
+#> [1] "cheap list"
 codename(seed = 8675309)
-#> [1] "crushing eagle"
+#> [1] "shadowy landfowl"
 codename(seed = 8675309)
-#> [1] "crushing eagle"
+#> [1] "shadowy landfowl"
+codename(seed = "My Project Name: The Subtitle of It Too")
+#> [1] "graceful dolphin"
 
 codename(type = "ubuntu")
-#> [1] "sardonic shrew"
+#> [1] "self-reliant snail"
 codename(type = "ubuntu")
-#> [1] "unsightly urial"
+#> [1] "paltry pigeon"
 codename(type = "ubuntu")
-#> [1] "likely loon"
+#> [1] "hefty hornet"
 codename(type = "ubuntu", seed = 123456)
-#> [1] "stimulating seahorse"
+#> [1] "average anaconda"
 codename(type = "ubuntu", seed = 123456)
-#> [1] "stimulating seahorse"
+#> [1] "average anaconda"
+codename(type = "ubuntu", seed = "My Ubuntu Release")
+#> [1] "spirited stork"
 ```
