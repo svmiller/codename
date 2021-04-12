@@ -30,4 +30,12 @@ codename <- function(type = "any", seed) {
     return(the_codename)
   }
 
+  if (type == "wu-tang") {
+    my_adj <- sample(wu_adjs$value, 1)
+    my_noun <- sample(wu_nouns$value, 1)
+
+    the_codename <- paste(my_adj, my_noun)
+    return(the_codename)
+  }
+
 }

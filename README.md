@@ -10,11 +10,11 @@
 library(codename)
 
 codename()
-#> [1] "metallic monkey"
+#> [1] "polished opossum"
 codename()
-#> [1] "horrible swordfish"
+#> [1] "stained possum"
 codename()
-#> [1] "cheap list"
+#> [1] "shrill snipe"
 codename(seed = 8675309)
 #> [1] "shadowy landfowl"
 codename(seed = 8675309)
@@ -34,4 +34,11 @@ codename(type = "ubuntu", seed = 123456)
 #> [1] "average anaconda"
 codename(type = "ubuntu", seed = "My Ubuntu Release")
 #> [1] "spirited stork"
+
+codename(type = "wu-tang")
+#> [1] "E-ratic Artist"
+codename(type = "wu-tang")
+#> [1] "Profound Genius"
+codename(type = "wu-tang", seed = "Steven V. Miller")
+#> [1] "Foolish Bandit"
 ```

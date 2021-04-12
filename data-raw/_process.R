@@ -48,3 +48,11 @@ gods <- readxl::read_excel("data-raw/gods.xlsx") %>%
   print()
 
 save(gods, file="data/gods.rda")
+
+# wu generator -----
+
+wu_adjs <- readr::read_tsv("data-raw/wu_adjs.txt")
+wu_nouns <- readr::read_tsv("data-raw/wu_nouns.txt")
+
+save(wu_adjs, file="data/wu_adjs.rda")
+save(wu_nouns, file="data/wu_nouns.rda")

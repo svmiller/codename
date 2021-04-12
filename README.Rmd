@@ -45,4 +45,7 @@ codename(type = "ubuntu", seed = 123456)
 codename(type = "ubuntu", seed = 123456)
 codename(type = "ubuntu", seed = "My Ubuntu Release")
 
+codename(type = "wu-tang")
+codename(type = "wu-tang")
+codename(type = "wu-tang", seed = "Steven V. Miller")
 ```
