@@ -26,13 +26,13 @@ save(animals, file="data/animals.rda")
 # colors ----
 # https://xkcd.com/color/rgb.txt
 
-colors <- read_tsv("data-raw/colors.tsv") %>%
+xkcd_colors <- read_tsv("data-raw/colors.tsv") %>%
   arrange(value) %>%
   select(-hex) %>%
   print()
 
 
-save(colors, file="data/colors.rda")
+save(xkcd_colors, file="data/xkcd_colors.rda")
 
 # god (greek) -----
 

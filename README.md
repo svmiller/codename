@@ -1,5 +1,5 @@
 
-# Codename Generation for Organizations, People, Projects, and Whatever Else
+# Generation of Codenames for Organizations, People, Projects, and Whatever Else
 
 [![](https://www.r-pkg.org/badges/version/codename?color=green)](https://cran.r-project.org/package=codename)
 [![](http://cranlogs.r-pkg.org/badges/grand-total/codename?color=green)](https://cran.r-project.org/package=codename)

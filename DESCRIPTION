@@ -1,15 +1,22 @@
 Package: codename
 Type: Package
-Title: Codename Generation for Organizations, People, Projects, and Whatever Else
+Title: Generation of Codenames for Organizations, People, Projects, and Whatever Else
 Version: 0.1.0
-Author: Steven V. Miller
+Depends: R (>= 3.5.0)
+Authors@R: person("Steve", "Miller",
+                  email = "steven.v.miller@gmail.com", 
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0003-4072-6263"))
 Maintainer: Steve Miller <steven.v.miller@gmail.com>
-Description: This package creates code names for projects.
-License: What license is it under?
+Description: This creates codenames that a user can consider for their organizations, their projects, themselves, people
+    in their organizations or projects, or whatever else. The user can also supply a numeric seed (and even a character seed)
+    for maximum reproducibility. Use is simple and the codenames produced come in various types too, contingent on what the
+    user may be desiring as a codename or nickname.
+License: GPL-2
 Encoding: UTF-8
 LazyData: true
-Imports:
-    dplyr
 Suggests:
     tibble
 RoxygenNote: 7.1.1
+URL: https://github.com/svmiller/codename
+BugReports: https://github.com/svmiller/codename/issues/

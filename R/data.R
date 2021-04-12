@@ -35,7 +35,7 @@
 #'
 #' @details Colors found by way of the web comic \emph{XKCD}.
 
-"colors"
+"xkcd_colors"
 
 
 #' A Data Frame of Gods

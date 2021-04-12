@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Codename Generation for Organizations, People, Projects, and Whatever Else
+# Generation of Codenames for Organizations, People, Projects, and Whatever Else
 
 ```{r echo=FALSE, results="hide", message=FALSE}
 library("badger")
