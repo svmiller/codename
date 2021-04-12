@@ -6,7 +6,7 @@
 
 R CMD check done via `devtools::check()`, resulting in 0 errors, 0 warnings, and 0 notes. All tests passed.
 
-`devtools::spell_check()` will suggest a few spelling errors. These are false positives given the context in which they appear. Importantly, I argue "codename" should not be understood as a misspelled word though the point is taken that there is a reason this was flagged as possibly misspelled.
+`devtools::spell_check()` suggests zero spelling errors that need explanation. That's a personal best.
 
 ## Downstream dependencies
 
