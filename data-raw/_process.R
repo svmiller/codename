@@ -27,7 +27,9 @@ save(animals, file="data/animals.rda")
 # https://xkcd.com/color/rgb.txt
 
 colors <- read_tsv("data-raw/colors.tsv") %>%
-  arrange(value)
+  arrange(value) %>%
+  select(-hex) %>%
+  print()
 
 
 save(colors, file="data/colors.rda")
@@ -56,3 +58,9 @@ wu_nouns <- readr::read_tsv("data-raw/wu_nouns.txt")
 
 save(wu_adjs, file="data/wu_adjs.rda")
 save(wu_nouns, file="data/wu_nouns.rda")
+
+# list of random-ass nouns -----
+
+
+nouns <- readr::read_tsv("data-raw/nouns.txt")
+save(nouns, file="data/nouns.rda")
