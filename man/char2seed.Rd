@@ -25,6 +25,9 @@ of "loss of accuracy", but this just means you supplied it a really long charact
 }
 \examples{
 
+char2seed("ABCDEF")
+char2seed("Go Bucks!")
+char2seed("My Project Title")
 
 }
 \author{

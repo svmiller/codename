@@ -17,9 +17,9 @@
 #'
 #' @examples
 #'
-# char2seed("ABCDEF")
-# char2seed("Go Bucks!")
-# char2seed("My Project Title")
+#' char2seed("ABCDEF")
+#' char2seed("Go Bucks!")
+#' char2seed("My Project Title")
 #'
 
 
