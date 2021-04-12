@@ -1,21 +1,21 @@
 
-# Generation of Codenames for Organizations, People, Projects, and Whatever Else
+# Generation of Code Names for Organizations, People, Projects, and Whatever Else
 
 [![](https://www.r-pkg.org/badges/version/codename?color=green)](https://cran.r-project.org/package=codename)
 [![](http://cranlogs.r-pkg.org/badges/grand-total/codename?color=green)](https://cran.r-project.org/package=codename)
 [![](http://cranlogs.r-pkg.org/badges/last-month/codename?color=green)](https://cran.r-project.org/package=codename)
 [![](http://cranlogs.r-pkg.org/badges/last-week/codename?color=green)](https://cran.r-project.org/package=codename)
 
-`codename` allows for users to create short, pithy codenames for their
+`codename` allows for users to create short, pithy code names for their
 organizations, their work projects, themselves, other people, or
 whatever else. The core of this package is the eponymous `codename()`
-function, which allows the user to create various types of codenames.
-The codenames returned from this function, by in large, are a two-word
+function, which allows the user to create various types of code names.
+The code names returned from this function, by in large, are a two-word
 character vector of an attribute and an object. Right now, options
 include “any” (which is default and incorporates a battery of adjectives
 and nouns), “gods” (in which the object is the name of a deity or saint
-from some religion), “ubuntu” (in which the codename is alliterative but
-the object is always an animal), and “wu-tang” (in which the codename is
+from some religion), “ubuntu” (in which the code name is alliterative but
+the object is always an animal), and “wu-tang” (in which the code name is
 derived from the classic Wu-Tang Name Generator). `codename()` also
 features the ability to use reproducible seeds, including character
 seeds, for maximum transparency and reproducibility.

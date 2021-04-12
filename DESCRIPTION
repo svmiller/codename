@@ -1,6 +1,6 @@
 Package: codename
 Type: Package
-Title: Generation of Codenames for Organizations, People, Projects, and Whatever Else
+Title: Generation of Code Names for Organizations, People, Projects, and Whatever Else
 Version: 0.1.0
 Depends: R (>= 3.5.0)
 Authors@R: person("Steve", "Miller",
@@ -8,10 +8,10 @@ Authors@R: person("Steve", "Miller",
                   role = c("aut", "cre"),
                   comment = c(ORCID = "0000-0003-4072-6263"))
 Maintainer: Steve Miller <steven.v.miller@gmail.com>
-Description: This creates codenames that a user can consider for their organizations, their projects, themselves, people
+Description: This creates code names that a user can consider for their organizations, their projects, themselves, people
     in their organizations or projects, or whatever else. The user can also supply a numeric seed (and even a character seed)
-    for maximum reproducibility. Use is simple and the codenames produced come in various types too, contingent on what the
-    user may be desiring as a codename or nickname.
+    for maximum reproducibility. Use is simple and the code names produced come in various types too, contingent on what the
+    user may be desiring as a code name or nickname.
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
