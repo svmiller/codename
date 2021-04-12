@@ -31,3 +31,20 @@ colors <- read_tsv("data-raw/colors.tsv") %>%
 
 
 save(colors, file="data/colors.rda")
+
+# god (greek) -----
+
+readr::melt_table2("data-raw/gods-greek.txt", skip = 1)
+
+# gods (top 10 per)
+
+gods <- readxl::read_excel("data-raw/gods.xlsx") %>%
+  fill(type) %>%
+  mutate(value = str_to_lower(value),
+         type = str_to_lower(type)) %>%
+  group_by(value) %>%
+  slice(1) %>%
+  ungroup() %>%
+  print()
+
+save(gods, file="data/gods.rda")
