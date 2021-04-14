@@ -39,16 +39,17 @@ codename <- function(type = "any", seed) {
   if (type == "any") {
 
     all_adjs <- rbind(adjectives, xkcd_colors, wu_adjs)
-    all_adjs <- tolower(all_adjs$value)
+    all_adjs$value <- tolower(all_adjs$value)
     my_adj <- sample(unique(all_adjs$value), 1)
 
     gods$type <- NULL
     all_nouns <- rbind(animals, gods, nouns, wu_nouns)
-    all_nouns <- tolower(all_nouns$value)
+    all_nouns$value <- tolower(all_nouns$value)
     my_noun <- sample(unique(all_nouns$value), 1)
 
     the_codename <- paste(my_adj, my_noun)
     return(the_codename)
+
 
   }
 
@@ -61,6 +62,7 @@ codename <- function(type = "any", seed) {
 
     the_codename <- paste(my_adj, my_noun)
     return(the_codename)
+
 
   }
 
@@ -89,5 +91,7 @@ codename <- function(type = "any", seed) {
     return(the_codename)
 
   }
+
+
 
 }

@@ -14,7 +14,7 @@ a data frame with 6801 observations and 1 column.
 nouns
 }
 \description{
-This is a data frame of nouns in the English language to use as an object in generating a codename.
+This is a data frame of nouns in the English language to use as an object in generating a code name.
 }
 \details{
 Nouns data come by way of "The Great Nouns List"

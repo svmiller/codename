@@ -14,7 +14,7 @@ a data frame with 400 observations and 1 column.
 animals
 }
 \description{
-This is a data frame of animals in the English language to use as an object in generating a codename.
+This is a data frame of animals in the English language to use as an object in generating a code name.
 }
 \details{
 Animals found on Github as a gist from username "@atduskgreg".

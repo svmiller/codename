@@ -14,7 +14,7 @@ a data frame with 221 observations and 1 column.
 gods
 }
 \description{
-This is a data frame of gods in the English language to use as an object in generating a codename.
+This is a data frame of gods in the English language to use as an object in generating a code name.
 }
 \details{
 Gods data cobbled from the website "Godchecker" after searching for the top 10 most popular deities by various regions/religions on their website.

@@ -14,7 +14,7 @@ a data frame with 949 observations and 1 column.
 xkcd_colors
 }
 \description{
-This is a data frame of colors in the English language to use as an attribute in generating a codename.
+This is a data frame of colors in the English language to use as an attribute in generating a code name.
 }
 \details{
 Colors found by way of the web comic \emph{XKCD}.

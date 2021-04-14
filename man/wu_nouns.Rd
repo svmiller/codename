@@ -14,7 +14,7 @@ a data frame with 40 observations and 1 column.
 wu_nouns
 }
 \description{
-This is a data frame of nouns from the "Wu-Tang Name Generator" to use as an object in generating a codename.
+This is a data frame of nouns from the "Wu-Tang Name Generator" to use as an object in generating a code name.
 }
 \details{
 These data are classic and apparently come from around 2002.

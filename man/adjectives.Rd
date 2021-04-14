@@ -14,7 +14,7 @@ a data frame with 1,347 observations and 1 column.
 adjectives
 }
 \description{
-This is a data frame of adjectives in the English language to use as an attribute in generating a codename.
+This is a data frame of adjectives in the English language to use as an attribute in generating a code name.
 }
 \details{
 Adjectives found on Github as a gist from username "@hugsy".
