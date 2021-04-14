@@ -65,8 +65,6 @@ codename(type = "gods")
 codename(type = "gods")
 codename(type = "gods", seed = 8675309)
 
-
-
 codename(type = "ubuntu")
 codename(type = "ubuntu")
 codename(type = "ubuntu")
@@ -94,3 +92,5 @@ This is an incomplete and running list of some of my favorite returns from this 
 
 - electric lime agenda
 - second-hand shovel
+- reckless azimuth
+- x-pert anesthesiology

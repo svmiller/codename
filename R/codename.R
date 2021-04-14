@@ -27,6 +27,8 @@ codename <- function(type = "any", seed) {
 
   if (missing(seed)) {
 
+    set.seed(NULL)
+
   } else {
     if (is.numeric(seed))
     {
@@ -51,6 +53,7 @@ codename <- function(type = "any", seed) {
     return(the_codename)
 
 
+
   }
 
   if (type == "gods") {
@@ -62,6 +65,7 @@ codename <- function(type = "any", seed) {
 
     the_codename <- paste(my_adj, my_noun)
     return(the_codename)
+
 
 
   }
@@ -80,6 +84,7 @@ codename <- function(type = "any", seed) {
 
     the_codename <- paste(my_adj, my_noun)
     return(the_codename)
+
   }
 
   if (type == "wu-tang") {
@@ -89,9 +94,6 @@ codename <- function(type = "any", seed) {
 
     the_codename <- paste(my_adj, my_noun)
     return(the_codename)
-
   }
-
-
 
 }
