@@ -14,10 +14,10 @@ The code names returned from this function, by in large, are a two-word
 character vector of an attribute and an object. Right now, options
 include “any” (which is default and incorporates a battery of adjectives
 and nouns), “gods” (in which the object is the name of a deity or saint
-from some religion), “ubuntu” (in which the code name is alliterative but
-the object is always an animal), and “wu-tang” (in which the code name is
-derived from the classic Wu-Tang Name Generator). `codename()` also
-features the ability to use reproducible seeds, including character
+from some religion), “ubuntu” (in which the code name is alliterative
+but the object is always an animal), and “wu-tang” (in which the code
+name is derived from the classic Wu-Tang Name Generator). `codename()`
+also features the ability to use reproducible seeds, including character
 seeds, for maximum transparency and reproducibility.
 
 # Installation
@@ -45,20 +45,20 @@ library(codename)
 
 # defaults to any
 codename()
-#> [1] "Tha globe"
+#> [1] "brownish pink hash"
 codename()
-#> [1] "shiny quart"
+#> [1] "electric lime agenda"
 codename()
-#> [1] "worried gyro"
+#> [1] "dark khaki churn"
 codename(seed = 8675309)
 #> [1] "content wilderness"
 codename(seed = "My Project Name: The Subtitle of It Too")
-#> [1] "grateful accuracy"
+#> [1] "grateful accusation"
 
 codename(type = "gods")
 #> [1] "mature yemaya"
 codename(type = "gods")
-#> [1] "needy chantio"
+#> [1] "needy chantico"
 codename(type = "gods")
 #> [1] "pastel wakan tanka"
 codename(type = "gods", seed = 8675309)
@@ -67,17 +67,17 @@ codename(type = "gods", seed = 8675309)
 
 
 codename(type = "ubuntu")
-#> [1] "grassy green gibbon"
+#> [1] "grey gibbon"
 codename(type = "ubuntu")
-#> [1] "shamrock green shrew"
+#> [1] "strawberry swan"
 codename(type = "ubuntu")
-#> [1] "spry shrew"
+#> [1] "spry swan"
 codename(type = "ubuntu", seed = 8675309)
-#> [1] "liliac landfowl"
+#> [1] "leaf landfowl"
 codename(type = "ubuntu", seed = 8675309)
-#> [1] "liliac landfowl"
+#> [1] "leaf landfowl"
 codename(type = "ubuntu", seed = "My Ubuntu Release")
-#> [1] "lovely list"
+#> [1] "lovely lungfish"
 
 codename(type = "wu-tang")
 #> [1] "Insane Beggar"
@@ -92,8 +92,8 @@ for (i in all_types) {
   output <- codename(type = i, seed  = "A Reproducible Character Seed")
   print(output)
 }
-#> [1] "tealish protocol"
+#> [1] "tealish green protocol"
 #> [1] "superb lumaluma"
-#> [1] "greenish beige gazelle"
+#> [1] "glum gazelle"
 #> [1] "E-ratic Leader"
 ```

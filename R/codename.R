@@ -39,10 +39,12 @@ codename <- function(type = "any", seed) {
   if (type == "any") {
 
     all_adjs <- rbind(adjectives, xkcd_colors, wu_adjs)
+    all_adjs <- tolower(all_adjs$value)
     my_adj <- sample(unique(all_adjs$value), 1)
 
     gods$type <- NULL
     all_nouns <- rbind(animals, gods, nouns, wu_nouns)
+    all_nouns <- tolower(all_nouns$value)
     my_noun <- sample(unique(all_nouns$value), 1)
 
     the_codename <- paste(my_adj, my_noun)
@@ -68,7 +70,10 @@ codename <- function(type = "any", seed) {
     my_noun <- sample(animals$value, 1)
     sw <- substring(my_noun, 1, 1)
 
-    matchingsw <- subset(rbind(adjectives, xkcd_colors), substr(value, 1, 1) == sw)
+    all_adjs <- rbind(adjectives, xkcd_colors)
+    all_adjs <- subset(all_adjs, sapply(strsplit(all_adjs$value, " "), length) == 1)
+
+    matchingsw <- subset(all_adjs, substr(value, 1, 1) == sw)
     my_adj <- sample(matchingsw$value, 1)
 
     the_codename <- paste(my_adj, my_noun)

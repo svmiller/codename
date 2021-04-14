@@ -12,6 +12,7 @@ save(adjectives, file="data/adjectives.rda")
 animals <- readr::read_tsv("data-raw/animals.txt")
 
 animals %>%
+  filter(value != "list") %>%
   mutate(value = str_to_lower(value),
          words = str_count(value, "\\S+")) %>%
   filter(words == 1) %>%
