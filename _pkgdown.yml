@@ -2,7 +2,13 @@ url: http://svmiller.com
 
 template:
   params:
-    bootswatch: journal
+    bootswatch: flatly
+
+# template:
+#   package: quillt
+#
+# development:
+#   mode: auto
 
 figures:
   fig.width: 11
