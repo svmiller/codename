@@ -6,6 +6,7 @@ codename 0.2.0 (in development)
 - Scrub documentation instances of "codename" to "code name." The former works well for the function and package name, but "code name" is proper English. I don't think anyone will notice or care.
 - Force "any" options to be lowercase. Basically, the inclusion of the Wu-Tang names results in the mismatch. `{codename}` will permit title case only for the Wu-Tang name generator component of this package.
 - Add `set.seed(NULL)` at the top line of `codename()`. Basically, R's `set.seed()` is designed to be at the top-level of the script. It means if you run a seed once, the path is pre-determined afterward and the code name generation follows the same path.
+- Configure website with `{pkgdown}`.
 
 codename 0.1.0
 ---------------------------------------------------------------------
