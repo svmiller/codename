@@ -1,6 +1,7 @@
 codename 0.2.0 (in development)
 ---------------------------------------------------------------------
 
+- Add `variety_pack()` function for sampling the wares, with (optional) reproducible seed.
 - Remove "list" from `animals`. This was a function of copy-pasting a list I found somewhere, which itself was just copy-pasted or scraped without a lot of inspection to the output.
 - Fix "chantio" to "chantico" in `gods`. My bad.
 - Scrub documentation instances of "codename" to "code name." The former works well for the function and package name, but "code name" is proper English. I don't think anyone will notice or care.

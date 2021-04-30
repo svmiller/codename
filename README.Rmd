@@ -76,12 +76,14 @@ codename(type = "wu-tang")
 codename(type = "wu-tang")
 codename(type = "wu-tang", seed = "Steven V. Miller")
 
-all_types <- c("any", "gods", "ubuntu", "wu-tang")
+# all_types <- c("any", "gods", "ubuntu", "wu-tang")
+# 
+# for (i in all_types) {
+#   output <- codename(type = i, seed  = "A Reproducible Character Seed")
+#   print(output)
+# }
 
-for (i in all_types) {
-  output <- codename(type = i, seed  = "A Reproducible Character Seed")
-  print(output)
-}
+variety_pack(seed = "A Reproducible Character Seed")
 
 ```
 
