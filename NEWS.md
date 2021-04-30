@@ -1,6 +1,7 @@
 codename 0.2.0 (in development)
 ---------------------------------------------------------------------
 
+- Add `codename_message()` to display package version in console. This may matter for future updates that alter the underlying data, which can change the output from a reproducible seed.
 - Add `variety_pack()` function for sampling the wares, with (optional) reproducible seed.
 - Remove "list" from `animals`. This was a function of copy-pasting a list I found somewhere, which itself was just copy-pasted or scraped without a lot of inspection to the output.
 - Fix "chantio" to "chantico" in `gods`. My bad.
