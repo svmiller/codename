@@ -51,44 +51,44 @@ codename_message()
 
 # defaults to any
 codename()
-#> [1] "worthless completion"
+#> [1] "hot colon"
 codename()
-#> [1] "frail matter"
+#> [1] "automatic cafe"
 codename()
-#> [1] "average bread"
+#> [1] "pumpkin pricing"
 codename()
-#> [1] "utter extremist"
+#> [1] "aqua marine weed"
 codename(seed = 8675309)
 #> [1] "content wilderness"
 codename(seed = "My Project Name: The Subtitle of It Too")
 #> [1] "grateful accusation"
 
 codename(type = "gods")
-#> [1] "celadon erzulie"
+#> [1] "silver ahura mazda"
 codename(type = "gods")
-#> [1] "firsthand morrigan"
+#> [1] "grand anath"
 codename(type = "gods")
-#> [1] "yellow brown khuno"
+#> [1] "faded blue olorum"
 codename(type = "gods", seed = 8675309)
 #> [1] "creamy sterculius"
 
 codename(type = "ubuntu")
-#> [1] "threadbare tiglon"
+#> [1] "mint moth"
 codename(type = "ubuntu")
-#> [1] "fair firefly"
+#> [1] "trained tahr"
 codename(type = "ubuntu")
-#> [1] "admired aardwolf"
+#> [1] "yellowgreen yak"
 codename(type = "ubuntu", seed = 8675309)
 #> [1] "leaf landfowl"
 codename(type = "ubuntu", seed = "My Ubuntu Release")
 #> [1] "lovely lungfish"
 
 codename(type = "wu-tang")
-#> [1] "X-pert Desperado"
+#> [1] "Quiet Destroyer"
 codename(type = "wu-tang")
-#> [1] "Unlucky Contender"
+#> [1] "Crazy Bandit"
 codename(type = "wu-tang")
-#> [1] "Dynamic Dreamer"
+#> [1] "Mighty Conqueror"
 codename(type = "wu-tang", seed = "Steven V. Miller")
 #> [1] "Foolish Bandit"
 

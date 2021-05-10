@@ -1,4 +1,4 @@
-codename 0.2.0 (in development)
+codename 0.2.0
 ---------------------------------------------------------------------
 
 - Add `codename_message()` to display package version in console. This may matter for future updates that alter the underlying data, which can change the output from a reproducible seed.
