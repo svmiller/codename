@@ -6,7 +6,7 @@
 
 R CMD check done via `devtools::check()`, resulting in 0 errors, 0 warnings, and 0 notes. All tests passed.
 
-`devtools::spell_check()` suggests zero spelling errors that need explanation. That's a personal best.
+`devtools::spell_check()` suggest spelling errors that are all false positives.
 
 ## Downstream dependencies
 
