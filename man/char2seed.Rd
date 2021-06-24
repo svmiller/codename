@@ -2,26 +2,37 @@
 % Please edit documentation in R/char2seed.R
 \name{char2seed}
 \alias{char2seed}
+\alias{char2seed_v1}
 \title{Convert a character vector to a numeric integer for setting a reproducible seed}
 \usage{
 char2seed(x)
+
+char2seed_v1(x)
 }
 \arguments{
 \item{x}{a character vector}
 }
 \value{
 \code{char2seed()} takes a character vector and returns a reproducible seed for you to use for whatever purpose. It's used internally in
-\code{codename()}.
+\code{codename()}. \code{char2seed_v1()} does the same, but using the older method from v. 0.1.0 and v. 0.2.0 of this release.
 }
 \description{
 \code{char2seed()} is a parlor trick for converting a character vector into an integer for the sake of setting a reproducible seed.
 }
 \details{
-Interested users can see how this works. Namely, letters (and numbers) in the character vector are assigned corresponding numbers. These
-numbers are added together and then exponentiated to create a really big number. The number is divided over 1 minus the absolute maximum number
-that R can handle by default (2^32). The remainder of this division is what ultimately becomes the reproducible seed. The nature of this parlor trick means
-there's a possibility, however infinitesimally small, that two different character vectors can return the same reproducible seed. The function may warn
-of "loss of accuracy", but this just means you supplied it a really long character vector.
+Interested users can see how this works. Namely, letters (and numbers) in the character vector are assigned corresponding numbers. In
+\code{char2seed()}, these numbers are concatenated together an divided over 1 minus the absolute maximum number that R can handle by
+default (2^32). The remainder of this division is what ultimately becomes the reproducible seed.
+
+In \code{char2seed_v1()}, these numbers are added together and then exponentiated to create a really big number. The number is divided over
+1 minus the absolute maximum number that R can handle by default (2^32). The remainder of this division is what ultimately becomes the
+reproducible seed.
+
+The nature of this parlor trick means there's a possibility, however small, that two different character vectors
+can return the same reproducible seed. This happened before \url{https://github.com/svmiller/codename/issues/1}, which is why
+I changed the function for generating the seed and moved the old function to \code{char2seed_v1()}.
+
+The function may warn of "loss of accuracy", but this just means you supplied it a really long character vector.
 }
 \examples{
 

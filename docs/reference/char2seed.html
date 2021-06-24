@@ -74,7 +74,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">codename</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.0</span>
       </span>
     </div>
 
@@ -122,7 +122,9 @@
     <p><code>char2seed()</code> is a parlor trick for converting a character vector into an integer for the sake of setting a reproducible seed.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>char2seed</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>char2seed</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span>
+
+<span class='fu'>char2seed_v1</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -136,14 +138,19 @@
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p><code>char2seed()</code> takes a character vector and returns a reproducible seed for you to use for whatever purpose. It's used internally in
-<code><a href='codename.html'>codename()</a></code>.</p>
+<code><a href='codename.html'>codename()</a></code>. <code>char2seed_v1()</code> does the same, but using the older method from v. 0.1.0 and v. 0.2.0 of this release.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Interested users can see how this works. Namely, letters (and numbers) in the character vector are assigned corresponding numbers. These
-numbers are added together and then exponentiated to create a really big number. The number is divided over 1 minus the absolute maximum number
-that R can handle by default (2^32). The remainder of this division is what ultimately becomes the reproducible seed. The nature of this parlor trick means
-there's a possibility, however infinitesimally small, that two different character vectors can return the same reproducible seed. The function may warn
-of "loss of accuracy", but this just means you supplied it a really long character vector.</p>
+    <p>Interested users can see how this works. Namely, letters (and numbers) in the character vector are assigned corresponding numbers. In
+<code>char2seed()</code>, these numbers are concatenated together an divided over 1 minus the absolute maximum number that R can handle by
+default (2^32). The remainder of this division is what ultimately becomes the reproducible seed.</p>
+<p>In <code>char2seed_v1()</code>, these numbers are added together and then exponentiated to create a really big number. The number is divided over
+1 minus the absolute maximum number that R can handle by default (2^32). The remainder of this division is what ultimately becomes the
+reproducible seed.</p>
+<p>The nature of this parlor trick means there's a possibility, however small, that two different character vectors
+can return the same reproducible seed. This happened before <a href='https://github.com/svmiller/codename/issues/1'>https://github.com/svmiller/codename/issues/1</a>, which is why
+I changed the function for generating the seed and moved the old function to <code>char2seed_v1()</code>.</p>
+<p>The function may warn of "loss of accuracy", but this just means you supplied it a really long character vector.</p>
     <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
 
     <p>Steven V. Miller</p>
@@ -151,9 +158,9 @@ of "loss of accuracy", but this just means you supplied it a really long charact
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
 <span class='fu'>char2seed</span><span class='op'>(</span><span class='st'>"ABCDEF"</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] 636</div><div class='input'><span class='fu'>char2seed</span><span class='op'>(</span><span class='st'>"Go Bucks!"</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] 1733</div><div class='input'><span class='fu'>char2seed</span><span class='op'>(</span><span class='st'>"My Project Title"</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] 1902490</div><div class='input'>
+</div><div class='output co'>#&gt; [1] 123456</div><div class='input'><span class='fu'>char2seed</span><span class='op'>(</span><span class='st'>"Go Bucks!"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] 655170768</div><div class='input'><span class='fu'>char2seed</span><span class='op'>(</span><span class='st'>"My Project Title"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] 518381568</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

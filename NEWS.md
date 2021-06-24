@@ -1,3 +1,8 @@
+codename 0.3.0
+---------------------------------------------------------------------
+
+Change `char2seed()` function and move old version of it to `char2seed_v1()`. This does not affect `codename()`, beyond the seed supplied for output.
+
 codename 0.2.0
 ---------------------------------------------------------------------
 
