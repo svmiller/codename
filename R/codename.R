@@ -79,7 +79,7 @@ codename <- function(type = "any", seed) {
     all_adjs <- rbind(adjectives, xkcd_colors)
     all_adjs <- subset(all_adjs, sapply(strsplit(all_adjs$value, " "), length) == 1)
 
-    matchingsw <- subset(all_adjs, substr(value, 1, 1) == sw)
+    matchingsw <- subset(all_adjs, tolower(substr(value, 1, 1)) == sw)
     my_adj <- sample(matchingsw$value, 1)
 
     the_codename <- paste(my_adj, my_noun)
