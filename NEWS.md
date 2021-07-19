@@ -1,3 +1,9 @@
+codename 0.4.0
+---------------------------------------------------------------------
+
+Ensure adjectives starting with capital letters can be matched to no animal names. Thank you @lemna for pointing this out and fixing it.
+
+
 codename 0.3.0
 ---------------------------------------------------------------------
 
