@@ -51,44 +51,44 @@ codename_message()
 
 # defaults to any
 codename()
-#> [1] "creamy escalator"
+#> [1] "light pink edible"
 codename()
-#> [1] "greenish grey necktie"
+#> [1] "yellow surge"
 codename()
-#> [1] "realistic democrat"
+#> [1] "overjoyed coupon"
 codename()
-#> [1] "yellow brown mammal"
+#> [1] "daring democrat"
 codename(seed = 8675309)
 #> [1] "yellow orange twist"
 codename(seed = "My Project Name: The Subtitle of It Too")
 #> [1] "bright blue barbiturate"
 
 codename(type = "gods")
-#> [1] "any inti"
+#> [1] "pear lumaluma"
 codename(type = "gods")
-#> [1] "heavy jurate"
+#> [1] "chartreuse perkons"
 codename(type = "gods")
-#> [1] "bright aqua austeja"
+#> [1] "criminal nandini"
 codename(type = "gods", seed = 8675309)
 #> [1] "scholarly wakan tanka"
 
 codename(type = "ubuntu")
-#> [1] "second-hand sole"
+#> [1] "chocolate cricket"
 codename(type = "ubuntu")
-#> [1] "fatal flyingfish"
+#> [1] "granular gibbon"
 codename(type = "ubuntu")
-#> [1] "puzzling pony"
+#> [1] "haunting hedgehog"
 codename(type = "ubuntu", seed = 8675309)
 #> [1] "moss mandrill"
 codename(type = "ubuntu", seed = "My Ubuntu Release")
 #> [1] "toupe tahr"
 
 codename(type = "wu-tang")
-#> [1] "Phantom Lover"
+#> [1] "Tuff Wanderer"
 codename(type = "wu-tang")
-#> [1] "Smilin’ Commander"
+#> [1] "Sarkastik Wanderer"
 codename(type = "wu-tang")
-#> [1] "Midnight Demon"
+#> [1] "Scratchin’ Watcher"
 codename(type = "wu-tang", seed = "Steven V. Miller")
 #> [1] "X-cessive Observer"
 
@@ -116,3 +116,15 @@ updated. No matter, I want to preserve some of these, for posterity.
 -   gregarious denominator
 -   lawn green insurgence
 -   corrupt chickadee
+-   realistic democrat
+-   creamy escalator
+
+# `{codename}` in the Wild
+
+Here’s a running list of projects that make use of `{codename}`. If you
+would look your project included, please [raise an
+issue](https://github.com/svmiller/codename/issues) on the project’s
+Github.
+
+-   [**corrupt
+    caterpillar**](https://github.com/andrewheiss/corrupt-caterpillar)

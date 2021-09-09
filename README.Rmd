@@ -102,3 +102,9 @@ This is an incomplete and running list of some of my favorite returns from this 
 - corrupt chickadee
 - realistic democrat
 - creamy escalator
+
+# `{codename}` in the Wild
+
+Here's a running list of projects that make use of `{codename}`. If you would look your project included, please [raise an issue](https://github.com/svmiller/codename/issues) on the project's Github.
+
+- [**corrupt caterpillar**](https://github.com/andrewheiss/corrupt-caterpillar)
