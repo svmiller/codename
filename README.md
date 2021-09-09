@@ -51,44 +51,44 @@ codename_message()
 
 # defaults to any
 codename()
-#> [1] "light pink edible"
+#> [1] "moss green implication"
 codename()
-#> [1] "yellow surge"
+#> [1] "lavender blue snuggle"
 codename()
-#> [1] "overjoyed coupon"
+#> [1] "warm purple ale"
 codename()
-#> [1] "daring democrat"
+#> [1] "pinkish train"
 codename(seed = 8675309)
 #> [1] "yellow orange twist"
 codename(seed = "My Project Name: The Subtitle of It Too")
 #> [1] "bright blue barbiturate"
 
 codename(type = "gods")
-#> [1] "pear lumaluma"
+#> [1] "apricot juras mate"
 codename(type = "gods")
-#> [1] "chartreuse perkons"
+#> [1] "lighter green mokosh"
 codename(type = "gods")
-#> [1] "criminal nandini"
+#> [1] "untried chernobog"
 codename(type = "gods", seed = 8675309)
 #> [1] "scholarly wakan tanka"
 
 codename(type = "ubuntu")
-#> [1] "chocolate cricket"
+#> [1] "cuddly cricket"
 codename(type = "ubuntu")
-#> [1] "granular gibbon"
+#> [1] "capital cod"
 codename(type = "ubuntu")
-#> [1] "haunting hedgehog"
+#> [1] "joint jaguar"
 codename(type = "ubuntu", seed = 8675309)
 #> [1] "moss mandrill"
 codename(type = "ubuntu", seed = "My Ubuntu Release")
 #> [1] "toupe tahr"
 
 codename(type = "wu-tang")
-#> [1] "Tuff Wanderer"
+#> [1] "Shriekin’ Wanderer"
 codename(type = "wu-tang")
-#> [1] "Sarkastik Wanderer"
+#> [1] "Bittah Knight"
 codename(type = "wu-tang")
-#> [1] "Scratchin’ Watcher"
+#> [1] "Zexy Dreamer"
 codename(type = "wu-tang", seed = "Steven V. Miller")
 #> [1] "X-cessive Observer"
 
@@ -106,25 +106,25 @@ from this function. Because most of the sample output on the README is a
 one-off return, these are prone to disappear every time the README is
 updated. No matter, I want to preserve some of these, for posterity.
 
--   electric lime agenda
--   second-hand shovel
--   reckless azimuth
--   x-pert anesthesiology
--   sunny sunroom
--   improbable boris
--   criminal outlaw
--   gregarious denominator
--   lawn green insurgence
--   corrupt chickadee
--   realistic democrat
--   creamy escalator
+  - electric lime agenda
+  - second-hand shovel
+  - reckless azimuth
+  - x-pert anesthesiology
+  - sunny sunroom
+  - improbable boris
+  - criminal outlaw
+  - gregarious denominator
+  - lawn green insurgence
+  - corrupt chickadee
+  - realistic democrat
+  - creamy escalator
 
 # `{codename}` in the Wild
 
 Here’s a running list of projects that make use of `{codename}`. If you
-would look your project included, please [raise an
+would like your project included, please [raise an
 issue](https://github.com/svmiller/codename/issues) on the project’s
 Github.
 
--   [**corrupt
+  - [**corrupt
     caterpillar**](https://github.com/andrewheiss/corrupt-caterpillar)
