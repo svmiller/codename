@@ -1,8 +1,10 @@
 url: http://svmiller.com
 
 template:
-  params:
-    bootswatch: flatly
+  bootstrap: 5
+  bootswatch: flatly
+  # params:
+  #   bootswatch: flatly
 
 # template:
 #   package: quillt

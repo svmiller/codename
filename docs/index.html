@@ -4,14 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="This creates code names that a user can consider for their organizations, their projects, themselves, people
+    in their organizations or projects, or whatever else. The user can also supply a numeric seed (and even a character seed)
+    for maximum reproducibility. Use is simple and the code names produced come in various types too, contingent on what the
+    user may be desiring as a code name or nickname.">
 <title>Generation of Code Names for Organizations, People, Projects, and Whatever Else • codename</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
-<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
+<!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
 <meta property="og:title" content="Generation of Code Names for Organizations, People, Projects, and Whatever Else">
 <meta property="og:description" content="This creates code names that a user can consider for their organizations, their projects, themselves, people
     in their organizations or projects, or whatever else. The user can also supply a numeric seed (and even a character seed)
@@ -22,80 +25,70 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body data-spy="scroll" data-target="#toc">
-    <div class="container template-home">
-      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <span class="navbar-brand">
-        <a class="navbar-link" href="index.html">codename</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.4.0</span>
-      </span>
-    </div>
+<body>
+    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
+    
 
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-primary"><div class="container">
+    
+    <a class="navbar-brand me-2" href="index.html">codename</a>
+
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.9</small>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar" class="collapse navbar-collapse ms-3">
+      <ul class="navbar-nav me-auto">
+<li class="nav-item">
+  <a class="nav-link" href="reference/index.html">Reference</a>
 </li>
-<li>
-  <a href="reference/index.html">Reference</a>
-</li>
-<li>
-  <a href="news/index.html">Changelog</a>
+<li class="nav-item">
+  <a class="nav-link" href="news/index.html">Changelog</a>
 </li>
       </ul>
-<ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="https://github.com/svmiller/codename/">
-    <span class="fab fa-github fa-lg"></span>
+<form class="form-inline my-2 my-lg-0" role="search">
+        <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="search.json" id="search-input" placeholder="Search for" autocomplete="off">
+</form>
+
+      <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/svmiller/codename/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
 </li>
       </ul>
 </div>
-<!--/.nav-collapse -->
+
+    
   </div>
-<!--/.container -->
+</nav><div class="container template-home">
+<div class="row">
+  <main id="main" class="col-md-9"><div class="section level1">
+<div class="page-header"><h1 id="generation-of-code-names-for-organizations-people-projects-and-whatever-else">Generation of Code Names for Organizations, People, Projects, and Whatever Else<a class="anchor" aria-label="anchor" href="#generation-of-code-names-for-organizations-people-projects-and-whatever-else"></a>
+</h1></div>
+
+<p><a href="https://github.com/svmiller/codename" class="external-link">codename</a> allows for users to create short, pithy code names for their organizations, their work projects, themselves, other people, or whatever else. The core of this package is the eponymous <code><a href="reference/codename.html">codename()</a></code> function, which allows the user to create various types of code names. The code names returned from this function, by in large, are a two-word character vector of an attribute and an object. Right now, options include “any” (which is default and incorporates a battery of adjectives and nouns), “gods” (in which the object is the name of a deity or saint from some religion), “ubuntu” (in which the code name is alliterative but the object is always an animal), and “wu-tang” (in which the code name is derived from the classic Wu-Tang Name Generator). <code><a href="reference/codename.html">codename()</a></code> also features the ability to use reproducible seeds, including character seeds, for maximum transparency and reproducibility.</p>
 </div>
-<!--/.navbar -->
-
-      
-
-      </header><div class="row">
-  <div class="contents col-md-9">
-
-<div id="generation-of-code-names-for-organizations-people-projects-and-whatever-else" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#generation-of-code-names-for-organizations-people-projects-and-whatever-else" class="anchor"></a>Generation of Code Names for Organizations, People, Projects, and Whatever Else</h1></div>
-
-<p><a href="https://github.com/svmiller/codename">codename</a> allows for users to create short, pithy code names for their organizations, their work projects, themselves, other people, or whatever else. The core of this package is the eponymous <code><a href="reference/codename.html">codename()</a></code> function, which allows the user to create various types of code names. The code names returned from this function, by in large, are a two-word character vector of an attribute and an object. Right now, options include “any” (which is default and incorporates a battery of adjectives and nouns), “gods” (in which the object is the name of a deity or saint from some religion), “ubuntu” (in which the code name is alliterative but the object is always an animal), and “wu-tang” (in which the code name is derived from the classic Wu-Tang Name Generator). <code><a href="reference/codename.html">codename()</a></code> also features the ability to use reproducible seeds, including character seeds, for maximum transparency and reproducibility.</p>
-</div>
-<div id="installation" class="section level1">
-<h1 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h1>
+<div class="section level1">
+<h1 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h1>
 <p>You will ideally soon be able to install this on CRAN, as follows:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"codename"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"codename"</span><span class="op">)</span></code></pre></div>
 <p>Until then, you can install the development version of this package through the <code>devtools</code> package.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"svmiller/codename"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"svmiller/codename"</span><span class="op">)</span></code></pre></div>
 </div>
-<div id="usage" class="section level1">
-<h1 class="hasAnchor">
-<a href="#usage" class="anchor"></a>Usage</h1>
+<div class="section level1">
+<h1 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
+</h1>
 <p>There isn’t much to belabor here and usage should be self-explanatory. Here is some sample output.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/svmiller/codename">codename</a></span><span class="op">)</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/svmiller/codename" class="external-link">codename</a></span><span class="op">)</span>
 
 <span class="co"># Generate console message about package version.</span>
 <span class="co"># Successive updates may break the expected output of a reproducible seed.</span>
@@ -152,9 +145,9 @@
 <span class="co">#&gt; [1] "banana barnacle"</span>
 <span class="co">#&gt; [1] "Scratchin’ Commander"</span></code></pre></div>
 </div>
-<div id="hall-of-fame-entries" class="section level1">
-<h1 class="hasAnchor">
-<a href="#hall-of-fame-entries" class="anchor"></a>Hall of Fame Entries</h1>
+<div class="section level1">
+<h1 id="hall-of-fame-entries">Hall of Fame Entries<a class="anchor" aria-label="anchor" href="#hall-of-fame-entries"></a>
+</h1>
 <p>This is an incomplete and running list of some of my favorite returns from this function. Because most of the sample output on the README is a one-off return, these are prone to disappear every time the README is updated. No matter, I want to preserve some of these, for posterity.</p>
 <ul>
 <li>electric lime agenda</li>
@@ -171,68 +164,77 @@
 <li>creamy escalator</li>
 </ul>
 </div>
-<div id="codename-in-the-wild" class="section level1">
-<h1 class="hasAnchor">
-<a href="#codename-in-the-wild" class="anchor"></a><code>{codename}</code> in the Wild</h1>
-<p>Here’s a running list of projects that make use of <a href="https://github.com/svmiller/codename">codename</a>. If you would like your project included, please <a href="https://github.com/svmiller/codename/issues">raise an issue</a> on the project’s Github.</p>
+<div class="section level1">
+<h1 id="codename-in-the-wild">
+<code>{codename}</code> in the Wild<a class="anchor" aria-label="anchor" href="#codename-in-the-wild"></a>
+</h1>
+<p>Here’s a running list of projects that make use of <a href="https://github.com/svmiller/codename" class="external-link">codename</a>. If you would like your project included, please <a href="https://github.com/svmiller/codename/issues" class="external-link">raise an issue</a> on the project’s Github.</p>
 <ul>
-<li><a href="https://github.com/andrewheiss/corrupt-caterpillar"><strong>corrupt caterpillar</strong></a></li>
+<li><a href="https://github.com/andrewheiss/corrupt-caterpillar" class="external-link"><strong>corrupt caterpillar</strong></a></li>
 </ul>
 </div>
 
-  </div>
-
-  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-    <div class="links">
-<h2>Links</h2>
+  </main><aside class="col-md-3"><div class="links">
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=codename">https://​cloud.r-project.org/​package=codename</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/svmiller/codename/">https://​github.com/​svmiller/​codename/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/svmiller/codename/issues/">https://​github.com/​svmiller/​codename/​issues/​</a>
-</li>
+<li><a href="https://cloud.r-project.org/package=codename" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/svmiller/codename/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/svmiller/codename/issues/" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li><a href="https://www.r-project.org/Licenses/GPL-2">GPL-2</a></li>
+<li><a href="https://www.r-project.org/Licenses/GPL-2" class="external-link">GPL-2</a></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing codename</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Steve Miller <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-4072-6263" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Steve Miller <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-4072-6263" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://cran.r-project.org/package=codename"><img src="https://www.r-pkg.org/badges/version/codename?color=green"></a></li>
-<li><a href="https://cran.r-project.org/package=codename"><img src="http://cranlogs.r-pkg.org/badges/grand-total/codename?color=green"></a></li>
-<li><a href="https://cran.r-project.org/package=codename"><img src="http://cranlogs.r-pkg.org/badges/last-month/codename?color=green"></a></li>
-<li><a href="https://cran.r-project.org/package=codename"><img src="http://cranlogs.r-pkg.org/badges/last-week/codename?color=green"></a></li>
+<li><a href="https://cran.r-project.org/package=codename" class="external-link"><img src="https://www.r-pkg.org/badges/version/codename?color=green"></a></li>
+<li><a href="https://cran.r-project.org/package=codename" class="external-link"><img src="http://cranlogs.r-pkg.org/badges/grand-total/codename?color=green"></a></li>
+<li><a href="https://cran.r-project.org/package=codename" class="external-link"><img src="http://cranlogs.r-pkg.org/badges/last-month/codename?color=green"></a></li>
+<li><a href="https://cran.r-project.org/package=codename" class="external-link"><img src="http://cranlogs.r-pkg.org/badges/last-week/codename?color=green"></a></li>
 </ul>
 </div>
-</div>
-</div>
 
-
-      <footer><div class="copyright">
-  <p>Developed by Steve Miller.</p>
+  </aside>
 </div>
 
-<div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+
+    <footer><div class="pkgdown-footer-left">
+  <p></p>
+<p>Developed by Steve Miller.</p>
 </div>
 
-      </footer>
+<div class="pkgdown-footer-right">
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+</div>
+
+    </footer>
 </div>
 
   
 
+  
 
   </body>
 </html>
