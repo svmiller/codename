@@ -1,0 +1,103 @@
+"Block
+Number",First Letters,Command / DOD Component / Agency
+1,AA - AF,USSOCOM (US Special Operations Command)
+2,AG - AL,USACOM (US Atlantic Command)
+3,AM - AR,USSPACECOM (US Space Command)
+4,AS - AZ,USEUCOM (US European Command)
+5,BA - BF,USPACOM (US Pacific Command)
+6,BG - BL,USSOUTHCOM (US Southern Command)
+7,BM - BR,USSOCOM (US Special Operations Command)
+8,BS - BZ,USSTRATCOM (US Strategic Command)
+9,CA - CF,US Army
+10,CG - CL,US Navy
+11,CM - CR,US Air Force
+12,CS - CZ,US Marine Corps
+13,DA - DF,NSA (National Security Agency)
+14,DG - DL,DNA (Defense Nuclear Agency)
+15,DM - DR,DIA (Defense Intelligence Agency)
+16,DS - DZ,DCA (Defense Communications Agency) (note 1)
+17,EA - EF,USCENTCOM (US Central Command)
+18,EG - EL,JCS (Joint Chiefs of Staff)
+19,EM - ER,USSOCOM (US Special Operations Command)
+20,ES - EZ,USACOM (US Atlantic Command)
+21,FA - FF,USSPACECOM (US Space Command)
+22,FG - FL,USEUCOM (US European Command)
+23,FM - FR,USPACOM (US Pacific Command)
+24,FS - FZ,USSOUTHCOM (US Southern Command)
+25,GA - GF,USSOCOM (US Special Operations Command)
+26,GG - GL,USSTRATCOM (US Strategic Command)
+27,GM - GR,US Army
+28,GS - GZ,US Navy
+29,HA - HF,US Air Force
+30,HG - HL,US Marine Corps
+31,HM - HR,NSA (National Security Agency)
+32,HS - HZ,DNA (Defense Nuclear Agency)
+33,IA - IF,DIA (Defense Intelligence Agency)
+34,IG - IL,DCA (Defense Communications Agency) (note 1)
+35,IM - IR,USCENTCOM (US Central Command)
+36,IS - IZ,JCS (Joint Chiefs of Staff)
+37,JA - JF,USSOCOM (US Special Operations Command)
+38,JG - JL,USACOM (US Atlantic Command)
+39,JM - JR,USSPACECOM (US Space Command)
+40,JS - JZ,USEUCOM (US European Command)
+41,KA - KF,USPACOM (US Pacific Command)
+42,KG - KL,USSOUTHCOM (US Southern Command)
+43,KM - KR,USSOCOM (US Special Operations Command)
+44,KS - KZ,USSTRATCOM (US Strategic Command)
+45,LA - LF,US Army
+46,LG - LL,US Navy
+47,LM - LR,US Air Force
+48,LS - LZ,US Marine Corps
+49,MA - MF,NSA (National Security Agency)
+50,MG - ML,DNA (Defense Nuclear Agency)
+51,MM - MR,DIA (Defense Intelligence Agency)
+52,MS - MZ,DCA (Defense Communications Agency) (note 1)
+53,NA - NF,USCENTCOM (US Central Command)
+54,NG - NL,JCS (Joint Chiefs of Staff)
+55,NM - NR,USEUCOM (US European Command)
+56,NS - NZ,USPACOM (US Pacific Command)
+57,OA - OF,USSOCOM (US Special Operations Command)
+58,OG - OL,USSTRATCOM (US Strategic Command)
+59,OM - OR,US Army
+60,OS - OZ,US Navy
+61,PA - PF,US Air Force
+62,PG - PL,US Marine Corps
+63,PM - PR,JCS (Joint Chiefs of Staff)
+64,PS - PZ,USTRANSCOM (US Transportation Command)
+65,QA - QF,USACOM (US Atlantic Command)
+66,QG - QL,-
+67,QM - QR,USSOUTHCOM (US Southern Command)
+68,QS - QZ,US Army
+69,RA - RF,US Navy
+70,RG - RL,US Air Force
+71,RM - RR,US Army
+72,RS - RZ,US Navy
+73,SA - SF,US Air Force
+74,SG - SL,USEUCOM (US European Command)
+75,SM - SR,USACOM (US Atlantic Command)
+76,SS - SZ,DIA (Defense Intelligence Agency)
+77,TA - TF,USPACOM (US Pacific Command)
+78,TG - TL,OSD (Office of the Secretary of Defense)
+79,TM - TR,US Army
+80,TS - TZ,USTRANSCOM (US Transportation Command)
+81,UA - UF,US Army
+82,UG - UL,USTRANSCOM (US Transportation Command)
+83,UM - UR,USACOM (US Atlantic Command)
+84,US - UZ,US Army
+85,VA - VF,USPACOM (US Pacific Command)
+86,VG - VL,USSPACECOM (US Space Command)
+87,VM - VR,USTRANSCOM (US Transportation Command)
+88,VS - VZ,-
+89,WA - WF,DMA (Defense Mapping Agency) (note 2)
+90,WG - WL,US Army
+91,WM - WR,USTRANSCOM (US Transportation Command)
+92,WS - WZ,-
+93,YA - YF,DIS (Defense Investigative Service) (note 3)
+94,YG - YL,USTRANSCOM (US Transportation Command)
+95,YM - YR,USSTRATCOM (US Strategic Command)
+96,YS - YZ,-
+97,ZA - ZF,OSD (Office of the Secretary of Defense)
+98,ZG - ZL,-
+99,ZM - ZR,-
+100,ZS - ZZ,-
+101,XA - XZ,White House Military Office
