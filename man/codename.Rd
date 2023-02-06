@@ -7,7 +7,7 @@
 codename(type = "any", seed)
 }
 \arguments{
-\item{type}{a type of code the user wants. Defaults to "any", but "gods", "ubuntu", and "wu-tang" are available.}
+\item{type}{a type of code the user wants. Defaults to "any", but "gods", "nicka", "ubuntu", and "wu-tang" are available.}
 
 \item{seed}{an optional reproducible seed, which can be specified as a character or number.}
 }
@@ -18,16 +18,49 @@ a codename for the user to consider for whatever it is they want.
 \description{
 \code{codename()} is a tool for generating codenames for various things.
 }
+\details{
+When type is 'any' (the default), the function combines all adjective data
+frames together (i.e. those from the Wu-Tang set, the colors, and the generic
+adjectives) and combines all noun data frames together (i.e. the animals, the
+generic nouns, the gods, and the Wu-Tang nouns). It then samples from each and
+combines them together.
+
+When type is 'gods', the function randomly samples a god from the \code{gods}
+data frame and pastes it to a random color or generic adjective.
+
+When type is 'ubuntu', a codename is derived that is broadly consistent with
+how Ubuntu versions their releases. This particular way of doing it starts with
+sampling an animal from the \code{animals} data frame. After an animal is
+selected, the function finds the first letter of the animal and matches it
+with something from the \code{adjectives} or \code{xkcd_colors} data sets.
+However, anything on the adjective side of the equation must be of length one.
+In other words, you can get "yellow yak" but you cannot have "yellow orange
+yak" because the "yellow orange" color is a two-word modifier.
+
+When type is 'wu-tang', a name is derived by randomly sampling from the
+\code{wu_adjs} and \code{wu_nouns} data frames.
+
+When type is 'nicka', the function randomly samples a U.S. agency from the
+\code{nicka_blocks} data frame. This agency has a series of two-character blocks
+from which they can draw a noun and an adjective. Thereafter, the function
+randomly selects something from a compilation of the adjectives and the nouns
+that start with something from the two-character block that was selected,
+though the sampling procedure omits any adjective or noun that is more than
+one word. You can cross-reference your code name to the \code{nicka_blocks}
+data frame to see what agency you're representing for something that I'm sure
+is nefarious and may require a congressional hearing.
+}
 \examples{
 
 codename()
 codename(type = "ubuntu")
 codename(type = "gods")
 codename(type = "wu-tang")
-codename(seed = 8675309)
-codename(seed = 8675309)
-codename(seed = "a character")
-codename(seed = "a character")
+codename(type = "nicka")
+codename(type = "ubuntu", seed = "A Character Seed")
+codename(type = "gods", seed = "A Character Seed")
+codename(type = "wu-tang", seed = "A Character Seed")
+codename(type = "nicka", seed = "A Character Seed")
 
 }
 \author{

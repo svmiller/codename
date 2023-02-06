@@ -5,5 +5,5 @@ if(getRversion() >= "2.15.1")
   utils::globalVariables(
     # underlying data used for behind-the-scenes handsomeness
     c("adjectives", "xkcd_colors", "wu_adjs", "animals",
-      "nouns", "wu_nouns", "value")
+      "nouns", "wu_nouns", "value", "nicka_blocks", "assigned_to")
   )

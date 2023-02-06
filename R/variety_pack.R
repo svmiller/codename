@@ -3,7 +3,7 @@
 #' @description \code{variety_pack()} is produces all types of code names available in \pkg{codename}.
 #'
 #' @return \code{variety_pack()} takes an optional reproducible seed and produces all kinds of code names available in
-#' \pkg{codename}.
+#' \pkg{codename}. In order, the return is "any", "gods", "nicka", "ubuntu", and "wu-tang".
 #'
 #' @author Steven V. Miller
 #'
@@ -18,7 +18,7 @@
 
 variety_pack <- function(seed) {
 
-  all_types <- c("any", "gods", "ubuntu", "wu-tang")
+  all_types <- c("any", "gods", "nicka", "ubuntu", "wu-tang")
 
   for (i in all_types) {
 

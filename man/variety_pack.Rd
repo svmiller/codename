@@ -11,7 +11,7 @@ variety_pack(seed)
 }
 \value{
 \code{variety_pack()} takes an optional reproducible seed and produces all kinds of code names available in
-\pkg{codename}.
+\pkg{codename}. In order, the return is "any", "gods", "nicka", "ubuntu", and "wu-tang".
 }
 \description{
 \code{variety_pack()} is produces all types of code names available in \pkg{codename}.

@@ -12,7 +12,8 @@ may (understandably) break an expected output from a reproducible seed in the \c
 adds an extra layer of transparency.
 }
 \description{
-\code{codename_message()} produces a message about the package version.
+\code{codename_message()} produces a message about the package version
+and the version of R making use of this package.
 }
 \examples{
 

@@ -15,21 +15,23 @@ character vector of an attribute and an object. Right now, options
 include “any” (which is default and incorporates a battery of adjectives
 and nouns), “gods” (in which the object is the name of a deity or saint
 from some religion), “ubuntu” (in which the code name is alliterative
-but the object is always an animal), and “wu-tang” (in which the code
-name is derived from the classic Wu-Tang Name Generator). `codename()`
-also features the ability to use reproducible seeds, including character
-seeds, for maximum transparency and reproducibility.
+but the object is always an animal), ‘nicka’ (in which code names are
+partly derived from conventions spelled out by the old U.S. NICKA
+system) and “wu-tang” (in which the code name is derived from the
+classic Wu-Tang Name Generator). `codename()` also features the ability
+to use reproducible seeds, including character seeds, for maximum
+transparency and reproducibility.
 
 # Installation
 
-You will ideally soon be able to install this on CRAN, as follows:
+You can install this on CRAN.
 
 ``` r
 install.packages("codename")
 ```
 
-Until then, you can install the development version of this package
-through the `devtools` package.
+You can also install the development version of this package through the
+`{devtools}` package.
 
 ``` r
 devtools::install_github("svmiller/codename")
@@ -51,52 +53,62 @@ codename_message()
 
 # defaults to any
 codename()
-#> [1] "playful maize"
+#> [1] "burnt red helium"
 codename()
-#> [1] "dry waste"
+#> [1] "unrealistic half"
 codename()
-#> [1] "purpley blue spirit"
+#> [1] "straight digestive"
 codename()
-#> [1] "daring dime"
-codename(seed = 8675309)
-#> [1] "yellow orange twist"
-codename(seed = "My Project Name: The Subtitle of It Too")
-#> [1] "bright blue barbiturate"
+#> [1] "limited coonskin"
 
 codename(type = "gods")
-#> [1] "all ahura mazda"
+#> [1] "jaunty yahweh"
 codename(type = "gods")
-#> [1] "butter gahe"
+#> [1] "these auseklis"
 codename(type = "gods")
-#> [1] "frigid ishtar"
-codename(type = "gods", seed = 8675309)
-#> [1] "scholarly wakan tanka"
+#> [1] "honored chernobog"
+codename(type = "gods")
+#> [1] "dark blue grey dagon"
+
+codename(type = "nicka")
+#> [1] "ill myth"
+codename(type = "nicka")
+#> [1] "twin worship"
+codename(type = "nicka")
+#> [1] "frivolous barn"
+codename(type = "nicka")
+#> [1] "definite metronome"
 
 codename(type = "ubuntu")
-#> [1] "heavy hawk"
+#> [1] "reflecting rattlesnake"
 codename(type = "ubuntu")
-#> [1] "superficial swift"
+#> [1] "wintergreen weasel"
 codename(type = "ubuntu")
-#> [1] "busy buzzard"
-codename(type = "ubuntu", seed = 8675309)
-#> [1] "moss mandrill"
-codename(type = "ubuntu", seed = "My Ubuntu Release")
-#> [1] "toupe tahr"
+#> [1] "virtuous vole"
+codename(type = "ubuntu")
+#> [1] "hoarse hippopotamus"
 
 codename(type = "wu-tang")
-#> [1] "Wicked Dominator"
+#> [1] "Mighty Worlock"
 codename(type = "wu-tang")
-#> [1] "Unlucky Contender"
+#> [1] "Mighty Beggar"
 codename(type = "wu-tang")
-#> [1] "Smilin’ Leader"
-codename(type = "wu-tang", seed = "Steven V. Miller")
-#> [1] "X-cessive Observer"
+#> [1] "Violent Commander"
+codename(type = "wu-tang")
+#> [1] "Vulgar Lover"
 
 variety_pack(seed = "A Reproducible Character Seed")
 #> [1] "afraid patriarch"
 #> [1] "meaty ausrine"
+#> [1] "xiphoid xenarthra"
 #> [1] "banana barnacle"
 #> [1] "Scratchin’ Commander"
+variety_pack(seed = 8675309)
+#> [1] "yellow orange twist"
+#> [1] "scholarly wakan tanka"
+#> [1] "wavy wear"
+#> [1] "moss mandrill"
+#> [1] "Thunderous Wizard"
 ```
 
 # Hall of Fame Entries
@@ -106,26 +118,33 @@ from this function. Because most of the sample output on the README is a
 one-off return, these are prone to disappear every time the README is
 updated. No matter, I want to preserve some of these, for posterity.
 
--   electric lime agenda
--   second-hand shovel
--   reckless azimuth
--   x-pert anesthesiology
--   sunny sunroom
--   improbable boris
--   criminal outlaw
--   gregarious denominator
--   lawn green insurgence
--   corrupt chickadee
--   realistic democrat
--   creamy escalator
--   recent prior
--   sapphire guacamole
--   deserted samurai
--   subtle girlfriend
--   critical father
--   short-term opposition
--   favorite weakness
--   lavender pawnshop
+- electric lime agenda
+- second-hand shovel
+- reckless azimuth
+- x-pert anesthesiology
+- sunny sunroom
+- improbable boris
+- criminal outlaw
+- gregarious denominator
+- lawn green insurgence
+- corrupt chickadee
+- realistic democrat
+- creamy escalator
+- recent prior
+- sapphire guacamole
+- deserted samurai
+- subtle girlfriend
+- critical father
+- short-term opposition
+- favorite weakness
+- lavender pawnshop
+- pungent pigeon
+- gifted gerbil
+- guilty gorilla
+- sniveling snail
+- foolish soma
+- baby poop buddha
+- sizzling sawfish
 
 # `{codename}` in the Wild
 
@@ -134,5 +153,5 @@ would like your project included, please [raise an
 issue](https://github.com/svmiller/codename/issues) on the project’s
 Github.
 
--   [**corrupt
-    caterpillar**](https://github.com/andrewheiss/corrupt-caterpillar)
+- [**corrupt
+  caterpillar**](https://github.com/andrewheiss/corrupt-caterpillar)

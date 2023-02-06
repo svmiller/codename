@@ -90,3 +90,19 @@
 #' @details These data are classic and apparently come from around 2002.
 
 "wu_nouns"
+
+#' A Data Frame of NICKA Blocks
+#'
+#' This is a data frame of the NICKA blocks used by the U.S. government for devising code names for operations.
+#'
+#' @format a data frame with 626 observations and 4 column.
+#' \describe{
+#' \item{\code{block}}{a numeric block identifier}
+#' \item{\code{first_last}}{a character vector for the range of first and last characters assigned to the particular U.S. agency}
+#' \item{\code{letlet}}{a character vector, derived from the \code{first_last} column}
+#' \item{\code{assigned_to}}{a character vector for the U.S. agency that had the block in question}
+#' }
+#'
+#' @details Data are taken from here: \url{http://www.designation-systems.net/usmilav/codenames.html}
+
+"nicka_blocks"

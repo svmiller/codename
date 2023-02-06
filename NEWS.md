@@ -1,6 +1,9 @@
 # codename 0.5.0
 
 - `codename_message()` will now display the version of R for the user as well. This should add in greater transparency in the event R changes its seed generator again.
+- Added `nicka_blocks` to data sets available in the package.
+- Added 'nicka' type to `codename()` and `variety_pack()`.
+- Updated documentation for `codename()` and `variety_pack()`.
 
 # codename 0.4.0
 
