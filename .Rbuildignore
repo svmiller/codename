@@ -9,3 +9,4 @@
 ^docs$
 ^pkgdown$
 ^_dross$
+^CRAN-SUBMISSION$
