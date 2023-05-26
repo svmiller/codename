@@ -14,7 +14,7 @@
 #' can return the same reproducible seed. This happened before \url{https://github.com/svmiller/codename/issues/1}, which is why
 #' I changed the function for generating the seed and moved the old function to \code{char2seed_v1()}.
 #'
-#' The function may warn of "loss of accuracy", but this just means you supplied it a really long character vector.
+#' The function may warn of "loss of accuracy". Under these conditions, consider a shorter character vector to apply here. Ultimately, this function is somewhat abusing the limitations of R's \code{set.seed()} function. The "loss of accuracy" in this context means you're actually getting a seed of 0. That would account for seed duplication you may see.
 #'
 #' @return \code{char2seed()} takes a character vector and returns a reproducible seed for you to use for whatever purpose. It's used internally in
 #' \code{codename()}. \code{char2seed_v1()} does the same, but using the older method from v. 0.1.0 and v. 0.2.0 of this release.
